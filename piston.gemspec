@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{piston}
-  s.version = "2.0.8"
+  s.version = "2.0.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Francois Beausoleil"]
-  s.date = %q{2010-01-12}
+  s.date = %q{2010-04-16}
   s.default_executable = %q{piston}
   s.description = %q{Piston makes it easy to merge vendor branches into your own repository, without worrying about which revisions were grabbed or not.  Piston will also keep your local changes in addition to the remote changes.}
   s.email = %q{francois@teksol.info}
@@ -113,16 +113,14 @@ Gem::Specification.new do |s|
      "test/unit/working_copy/test_validate.rb",
      "tmp/.gitignore"
   ]
-  s.has_rdoc = false
   s.homepage = %q{http://francois.github.com/piston}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{piston}
-  s.rubygems_version = %q{1.3.5}
+  s.rubygems_version = %q{1.3.6}
   s.summary = %q{Ease your vendor branch management worries}
   s.test_files = [
     "test/integration_helpers.rb",
-     "test/spec_suite.rb",
      "test/test_helper.rb",
      "test/unit/git/commit/test_checkout.rb",
      "test/unit/git/commit/test_each.rb",
@@ -159,7 +157,8 @@ Gem::Specification.new do |s|
      "test/unit/working_copy/test_guessing.rb",
      "test/unit/working_copy/test_info.rb",
      "test/unit/working_copy/test_rememberance.rb",
-     "test/unit/working_copy/test_validate.rb"
+     "test/unit/working_copy/test_validate.rb",
+     "test/spec_suite.rb"
   ]
 
   if s.respond_to? :specification_version then
